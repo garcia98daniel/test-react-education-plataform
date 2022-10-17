@@ -1,0 +1,19 @@
+.event_container{
+    background: white;
+    padding: 20px 15px;
+    width: 154px;
+}
+
+.image_container{
+    position:relative;
+    height:64px;
+    width:64px;
+}
+
+.event_hour{
+    color: rgb(202, 202, 202);
+}
+
+.event_tittle{
+    width: 80px;
+}

@@ -1,0 +1,24 @@
+.progressItem_container{
+    background: white;
+    border-radius: 4px;
+    color: #9C9AB5;
+    width: 140px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    font-size: 1.1em;
+}
+.progressItem_container.active{
+    color: white;
+    background: rgb(26, 133, 255);
+    box-shadow: rgb(26, 133, 255, 0.3) 0px 19px 38px, rgb(26, 133, 255, 0.3) 0px 15px 12px;
+}
+.progressItem_container.active h1{
+    color: white;
+}
+
+.progressItem_container h1{
+    color: black;
+    margin-left: 5px;
+}

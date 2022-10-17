@@ -1,0 +1,30 @@
+.section_container{
+    background: #F5F5FB;
+    position: relative;
+    padding: 20px 20px 30px 20px;
+}
+
+.tittle_section_container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.tittle_section{
+    color: var(--text-color-blue);
+    font-size: 2em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+}
+
+.line{
+    background: rgb(228, 228, 228);
+    height:2px;
+    width: 55%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+    padding: 0 10px;
+}
