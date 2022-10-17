@@ -1,0 +1,134 @@
+/* progress bar */
+.progressbar_container{
+    color:white;
+    background: #1A2D7D;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.progressbar_tittle{
+    font-size: 1.7em;
+}
+
+.progressbar{
+    margin-bottom: 15px;
+}
+
+.skills{
+    width: 160px;
+    height:160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    transform: rotate(-89deg);
+}
+
+.outer{
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.inner{
+    height:120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.number{
+    font-weight: 600;
+    font-size: 2.3em;
+    color: white;
+    transform: rotate(89deg);
+
+}
+.number small{
+    font-weight: 600;
+    font-size: 0.5em !important;
+    color: white;
+}
+.svg{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 150;
+    /* animation: anim 2s linear forwards; */
+    transition: 2s linear forwards;
+}
+
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.svg_bg{
+    position: absolute;
+    top:0;
+    left:0;
+    color: #FF794F;
+}
+
+.circle_bg{
+    fill: none;
+    stroke:url(#GradientColor_bg);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+
+}
+
+
+.stats_container{
+    width: 80%;
+    border-radius: 10px;
+    color:white;
+    background: rgba(255, 255, 255, 0.122);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.complete_icon{
+    background: #FED200;
+    padding: 0.1px 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.separation{
+    background: rgb(211, 211, 211);
+    border-left: 1px solid rgb(211, 211, 211);
+    margin: 10px;
+}
+.left_icon{
+    background: #FF794F;
+    padding: 0.1px 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.hours{
+    display:flex;
+    align-items: center;
+}
+
+.hours strong{
+    font-size: 2em;
+    font-weight: 400;
+   margin-right: 5px;
+}
+
+/* end progress bar */

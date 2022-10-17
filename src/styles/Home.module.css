@@ -74,62 +74,7 @@
     display: flex;
     justify-content: space-between;
 }
-/* progress bar */
-.progressbar_container{
-    color:white;
-    background: #1A2D7D;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-}
-.progressbar_tittle{
-    font-size: 1.7em;
-}
 
-
-.stats_container{
-    width: 80%;
-    border-radius: 10px;
-    color:white;
-    background: rgba(255, 255, 255, 0.122);
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.complete_icon{
-    background: #FED200;
-    padding: 0.1px 6px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.separation{
-    background: rgb(211, 211, 211);
-    border-left: 1px solid rgb(211, 211, 211);
-    margin: 10px;
-}
-.left_icon{
-    background: #FF794F;
-    padding: 0.1px 6px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.hours{
-    display:flex;
-    align-items: center;
-}
-
-.hours strong{
-    font-size: 2em;
-    font-weight: 400;
-   margin-right: 5px;
-}
-
-/* end progress bar */
 
 .progressItems_container{
     display: flex;

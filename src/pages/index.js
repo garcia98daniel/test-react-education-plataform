@@ -12,6 +12,8 @@ import { Button, Icon } from "semantic-ui-react";
 import EventsToday from "../components/EventsToday/index";
 import ActivityItem from "../components/ActivityItem/index";
 import ProgressItem from "../components/ProgressItem/index";
+import ProgressBar from "../components/ProgressBar/index";
+
 export default function Home() {
   const settings = {
     focusOnSelect: true,
@@ -69,33 +71,7 @@ export default function Home() {
         <ActivityItem img={"ic-events@3x.png"} description={"3 new events were added to your calendar"}/>
         <ActivityItem img={"ic-assignments@3x.png"} description={"You have 3 pending readings to complete 🤓"}/>
       </Section>
-      <section className={styles.progressbar_container}>
-        <p className={styles.progressbar_tittle}>Progress overview</p>
-        <div className={styles.progressbar}>
 
-        </div>
-        <div className={styles.stats_container}>
-
-            <div className={styles.complete_container}>
-              <small className={styles.small_text}>
-                <i className={styles.complete_icon}></i>
-                Completed
-              </small>
-              <p className={styles.hours}><strong>20</strong> hours</p>
-            </div>
-
-            <span className={styles.separation}></span>
-
-            <div className={styles.left_container}>
-              <small className={styles.small_text}>
-                <i className={styles.left_icon}></i>
-                Left to go
-              </small>
-              <p className={styles.hours}><strong>30</strong> hours</p>
-            </div>
-            
-        </div>
-      </section>
       <Section tittle={"Progress"} marginBottomTittle={10}>
         <div className={styles.progressItems_container}>
           <ProgressItem text={"Total Webinars"} number={9}/>
@@ -105,7 +81,7 @@ export default function Home() {
           <ProgressItem text={"Total"} number={5}/>
         </div>
       </Section>
-
+      <ProgressBar totalHours={50} completeHours={45}/>
       <div className={styles.confirm_acount_warning_wrapper}>
         <div className={styles.confirm_acount_warning}>
           <p>
