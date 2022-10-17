@@ -4,7 +4,7 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #ffff;
-    height: 100px;
+    height: 80px;
     width: 100%;
     -webkit-box-shadow: 0px 10px 5px 0px rgb(225, 225, 225, 0.5);
     -moz-box-shadow: 0px 10px 5px 0px rgba(225,225,225,0.5);
@@ -14,33 +14,7 @@
     z-index: 10;
 }
 
-.btn_menu_container{
-    display:flex;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    border:0;
-    background: transparent;
-    gap: .65rem;
-    cursor: pointer;
-}
-.btn_menu_container > div{
-    background: gray;
-    height:3px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .5s;
-    transform-origin: left;
-}
-.btn_menu_container:hover div:first-child{
-    transform: rotate(50deg);
-}
-.btn_menu_container:hover div:nth-child(2){
-    opacity: 0;
-}
-.btn_menu_container:hover div:nth-child(3){
-    transform: rotate(-50deg);  
-}
+
 
 
 .brand_img_container{
@@ -53,4 +27,92 @@
     position: relative;
     height: 64px;
     width: 64px;
+    margin: 0 10px;
+}
+
+.desktop_items_container{
+    display: none;
+}
+
+.profile_container{
+    display: flex;
+    align-items: center;
+}
+
+.profile_container p{
+    display:none;
+}
+
+.icon_profile{
+    display: none;
+}
+
+
+@media screen and (min-width:768px){
+
+    .brand_img_container{
+        width: 200px;
+    }
+
+    .desktop_items_container{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+    }
+
+    .search_container{
+        width: 550px;
+    }
+
+    .add_btn{
+        color: white;
+        border-radius: 18px;
+        background: #3D84FF;
+        border:none;
+        height: 20px;
+        padding: 25px 20px;
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 10px;
+    }
+
+    .icon_container{
+        position: relative;
+        height: 25px;
+        width: 25px;
+        margin: 0 10px;
+    }
+
+    .notification_light{
+        position: absolute;
+        right: 0;
+        bottom:0;
+        height:8px;
+        width: 8px;
+        border-radius: 50%;
+        background: #3D84FF;
+    }
+
+    .profile_container p{
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 0;
+    }
+
+    .icon_profile{
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 15px;
+        width: 15px;
+        margin: 0 10px;
+        transform: rotate(180deg);
+    }
+
+    .btn_container{
+        display: none;
+    }
 }

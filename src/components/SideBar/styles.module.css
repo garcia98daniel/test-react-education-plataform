@@ -1,0 +1,32 @@
+.sideBar_container{
+    background: #3D84FF;
+    width: 55px;
+}
+
+.options_container{
+    position: sticky;
+    top: 80px;
+}
+
+.option:first-child{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    transform: scale(1);
+}
+.option{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 20px 0;
+}
+.option:hover{
+    background: #005DFF;
+    cursor:pointer;
+}
+
+.icon_container{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
