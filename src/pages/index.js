@@ -39,7 +39,18 @@ export default function Home() {
           <div className={styles.searchWrapper}>
             <SearchInput />
           </div>
-          <Section tittle={"Dashboard"} marginBottomTittle={60}>
+          <Section line={false} tittle={"Dashboard"} marginBottomTittle={60}>
+
+            <div className={styles.language_container}>
+              <small>Currently Learning</small>
+              <div className={styles.icon_language_container}>
+                <i className={styles.icon_language}>
+                  <Image src={"/images/usaIcon.png"} layout="fill" objectFit="cover"/>
+                </i>
+                <p>English</p>
+              </div>
+            </div>
+            
             <div className={styles.square_container}>
               <div className={styles.info_container}>
                 <div className={styles.img_container}>
@@ -58,7 +69,7 @@ export default function Home() {
             </div>
           </Section>
 
-          <Section tittle={"Events"} marginBottomTittle={10}>
+          <Section line={true} tittle={"Events"} marginBottomTittle={10}>
             <div className={styles.event_section_container}>
                 <div className={styles.slider_container}>
                   <div className={styles.slider_txt}>
@@ -71,7 +82,7 @@ export default function Home() {
                     <img src={"/images/sliderImg.png"} />
                   </Slider>
                 </div>
-                <Section tittle={ <small className={styles.small_tittle}>EVENTS TODAY</small> }  marginBottomTittle={0}>
+                <Section line={true} tittle={ <small className={styles.small_tittle}>EVENTS TODAY</small> }  marginBottomTittle={0}>
                   <div className={styles.events_container}>
                     <EventsToday
                       event_hour={"10:30AM"}
@@ -87,7 +98,7 @@ export default function Home() {
                 </Section>
             </div>
           </Section>
-          <Section tittle={"Activity"} marginBottomTittle={10}>
+          <Section line={true} tittle={"Activity"} marginBottomTittle={10}>
             <ActivityItem
               img={"ic-followers@3x.png"}
               description={
@@ -106,7 +117,7 @@ export default function Home() {
           <div className={styles.progressBar_progress_confirm_container}>
             <ProgressBar totalHours={50} completeHours={20} />
             <div className={styles.progress_confirm_right}>
-                    <Section tittle={"Progress"} marginBottomTittle={10}>
+                    <Section line={true} tittle={"Progress"} marginBottomTittle={10}>
                       <div className={styles.progressItems_container}>
                         <ProgressItem text={"Total Webinars"} number={9} />
                         <ProgressItem text={"Pending Assignments"} number={0} />

@@ -1,4 +1,34 @@
 
+.language_container{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background-color: white;
+    padding: 20px 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+}
+
+.language_container small {
+    color:gray;
+}
+.icon_language_container{
+    position: relative;
+    display:flex;
+}
+.icon_language{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.icon_language_container p{
+    font-size: 1.5em;
+    font-family: var(--Nunito-Bold-font);
+}
 
 .square_container{
     width: 100%;
