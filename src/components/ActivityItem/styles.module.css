@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+.img_description_container{
+    display: flex;
+    align-items: center;
+        width: 100%;
+
+}
+
 .img_container{
     position: relative;
     height: 64px;
@@ -31,4 +38,33 @@
 .moreInfo{
     text-align: justify;
     text-justify: inter-word;
+}
+
+@media screen and (min-width:768px){
+    .activity_wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .activity_container{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .moreInfo{
+        padding: 30px;
+    }
+
+    .icon_container{
+        position: relative;
+        height: 12px;
+        width: 12px;
+        transform: rotate(90deg);
+    }
+    .icon_container_active{
+        position: relative;
+        height: 12px;
+        width: 12px;
+        transform: rotate(180deg);
+    }
 }

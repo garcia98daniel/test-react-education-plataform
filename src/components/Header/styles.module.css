@@ -63,7 +63,8 @@
     }
 
     .search_container{
-        width: 550px;
+        width: 100%;
+        max-width: 550px;
     }
 
     .add_btn{

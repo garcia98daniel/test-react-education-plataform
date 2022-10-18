@@ -2,6 +2,8 @@
     background: white;
     padding: 20px 15px;
     width: 154px;
+    margin: 5px;
+    border-radius: 6px;
 }
 
 .image_container{
@@ -10,10 +12,21 @@
     width:64px;
 }
 
+.event_hour_tittle_container{
+    margin-left: 15px;
+}
+
 .event_hour{
     color: rgb(202, 202, 202);
 }
 
 .event_tittle{
     width: 80px;
+}
+
+@media screen and (min-width:768px){
+    .event_container{
+        display: flex;
+        width: 100%;
+    }
 }

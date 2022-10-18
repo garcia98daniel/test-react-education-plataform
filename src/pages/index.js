@@ -59,36 +59,33 @@ export default function Home() {
           </Section>
 
           <Section tittle={"Events"} marginBottomTittle={10}>
-            <div className={styles.slider_container}>
-              <div className={styles.slider_txt}>
-                <h2>Youth Talent & Education</h2>
-                <p>May, 20</p>
-              </div>
-              <div className={styles.student_class}>SCIENCE</div>
-              <Slider {...settings}>
-                <img src={"/images/sliderImg.png"} />
-                <img src={"/images/sliderImg.png"} />
-              </Slider>
+            <div className={styles.event_section_container}>
+                <div className={styles.slider_container}>
+                  <div className={styles.slider_txt}>
+                    <h2>Youth Talent & Education</h2>
+                    <p>May, 20</p>
+                  </div>
+                  <div className={styles.student_class}>SCIENCE</div>
+                  <Slider {...settings}>
+                    <img src={"/images/sliderImg.png"} />
+                    <img src={"/images/sliderImg.png"} />
+                  </Slider>
+                </div>
+                <Section tittle={ <small className={styles.small_tittle}>EVENTS TODAY</small> }  marginBottomTittle={0}>
+                  <div className={styles.events_container}>
+                    <EventsToday
+                      event_hour={"10:30AM"}
+                      event_tittle={"Webinar: the basics of…"}
+                      event_img={"thumbnail@1,5x.svg"}
+                    />
+                    <EventsToday
+                      event_hour={"10:30AM"}
+                      event_tittle={"Webinar: the basics of…"}
+                      event_img={"thumbnail@1,5x.svg"}
+                    />
+                  </div>
+                </Section>
             </div>
-            <Section
-              tittle={
-                <small className={styles.small_tittle}>EVENTS TODAY</small>
-              }
-              marginBottomTittle={10}
-            >
-              <div className={styles.events_container}>
-                <EventsToday
-                  event_hour={"10:30AM"}
-                  event_tittle={"Webinar: the basics of…"}
-                  event_img={"thumbnail@1,5x.svg"}
-                />
-                <EventsToday
-                  event_hour={"10:30AM"}
-                  event_tittle={"Webinar: the basics of…"}
-                  event_img={"thumbnail@1,5x.svg"}
-                />
-              </div>
-            </Section>
           </Section>
           <Section tittle={"Activity"} marginBottomTittle={10}>
             <ActivityItem
@@ -106,26 +103,31 @@ export default function Home() {
               description={"You have 3 pending readings to complete 🤓"}
             />
           </Section>
-
-          <Section tittle={"Progress"} marginBottomTittle={10}>
-            <div className={styles.progressItems_container}>
-              <ProgressItem text={"Total Webinars"} number={9} />
-              <ProgressItem text={"Pending Assignments"} number={0} />
-              <ProgressItem text={"Total Readings"} number={14} />
-              <ProgressItem text={"Total Videos"} number={5} active />
-              <ProgressItem text={"Total"} number={5} />
-            </div>
-          </Section>
-          <ProgressBar totalHours={50} completeHours={45} />
-          <div className={styles.confirm_acount_warning_wrapper}>
-            <div className={styles.confirm_acount_warning}>
-              <p>
-                Confirm your account details
-                <br />
-                Please confirm your email and phone number.
-                <br />
-                😰
-              </p>
+          <div className={styles.progressBar_progress_confirm_container}>
+            <ProgressBar totalHours={50} completeHours={20} />
+            <div className={styles.progress_confirm_right}>
+                    <Section tittle={"Progress"} marginBottomTittle={10}>
+                      <div className={styles.progressItems_container}>
+                        <ProgressItem text={"Total Webinars"} number={9} />
+                        <ProgressItem text={"Pending Assignments"} number={0} />
+                        <ProgressItem text={"Total Readings"} number={14} />
+                        <ProgressItem text={"Total Videos"} number={5} active />
+                        <ProgressItem text={"Total"} number={5} />
+                      </div>
+                    </Section>
+                    <div className={styles.confirm_acount_warning_wrapper}>
+                      <div className={styles.confirm_acount_warning}>
+                        <p>
+                          Confirm your account details
+                        </p>
+                        <p>
+                          Please confirm your email and phone number.
+                        </p>
+                          <p>
+                          😰
+                          </p>
+                      </div>
+                    </div>
             </div>
           </div>
         </div>

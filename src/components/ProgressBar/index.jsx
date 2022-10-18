@@ -32,20 +32,20 @@ function index({totalHours, completeHours}) {
               <svg className={styles.svg_bg} xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                 <defs>
                     <linearGradient id="GradientColor_bg">
-                      <stop offset="0%" stop-color="#ff794f" />
-                      <stop offset="100%" stop-color="#ff794f" />
+                      <stop offset="0%" stopColor="#ff794f" />
+                      <stop offset="100%" stopColor="#ff794f" />
                     </linearGradient>
                 </defs>
-                <circle className={styles.circle_bg} cx="80" cy="80" r="70" stroke-linecap="round" />
+                <circle className={styles.circle_bg} cx="80" cy="80" r="70" strokeLinecap="round" />
               </svg>
               <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                 <defs>
                     <linearGradient id="GradientColor">
-                      <stop offset="0%" stop-color="#FED200" />
-                      <stop offset="100%" stop-color="#FED200" />
+                      <stop offset="0%" stopColor="#FED200" />
+                      <stop offset="100%" stopColor="#FED200" />
                     </linearGradient>
                 </defs>
-                <circle ref={myRef} className={styles.circle} cx="80" cy="80" r="70" stroke-linecap="round" />
+                <circle ref={myRef} className={styles.circle} cx="80" cy="80" r="70" strokeLinecap="round" />
               </svg> 
           </div>
         </div>

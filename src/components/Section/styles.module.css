@@ -1,4 +1,5 @@
 .section_container{
+    width: 100%;
     background: #F5F5FB;
     position: relative;
     padding: 20px 20px 30px 20px;
@@ -17,6 +18,8 @@
     align-items:center;
     justify-content: center;
     margin: 0;
+    min-width: fit-content;
+    margin-right: 20px;
 }
 
 .line{
@@ -27,4 +30,17 @@
     transition: all .5s;
     transform-origin: left;
     padding: 0 10px;
+}
+
+@media screen and (min-width: 768px){
+    .section_container{
+        width: 100%;
+        background: #F5F5FB;
+        position: relative;
+        padding: 30px 20px 0px 20px;
+    }
+
+    .line{
+        width: 100%;
+    }
 }
