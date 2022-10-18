@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css'
 import Image from "next/image";
 
-function index({event_hour, event_tittle, event_img}) {
+function EventsToday({event_hour, event_tittle, event_img}) {
     return (
         <div className={styles.event_container}>
             <div className={styles.image_container}>
@@ -16,4 +16,4 @@ function index({event_hour, event_tittle, event_img}) {
     );
 }
 
-export default index;
+export default EventsToday;

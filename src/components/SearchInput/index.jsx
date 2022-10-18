@@ -6,7 +6,7 @@ import {
     Icon,
   } from "semantic-ui-react";
 
-function index(props) {
+function SearchInput(props) {
     return (
         <div className={styles.search_container}>
            <div className={styles.search_input_container}>
@@ -19,4 +19,4 @@ function index(props) {
     );
 }
 
-export default index;
+export default SearchInput;

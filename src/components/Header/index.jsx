@@ -4,7 +4,7 @@ import Image from 'next/image';
 import SearchInput from '../SearchInput/index';
 import BurgerButtom from '../BurgerButtom/index';
 import NotificationItem from '../NotificationItem/index';
-function index(props) {
+function Header(props) {
     const [isOpenNotifications, setIsOpenNotifications] = useState(false);
     const notificationRef = useRef(null);
 
@@ -67,4 +67,4 @@ function index(props) {
     );
 }
 
-export default index;
+export default Header;

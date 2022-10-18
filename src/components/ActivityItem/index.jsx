@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from './styles.module.css'
 import Image from "next/image";
 
-function index({img, description}) {
+function ActivityItem({img, description}) {
     const [seeMore, setSeeMore] = useState(false)
     return (
         <div className={styles.activity_wrapper}>
@@ -26,4 +26,4 @@ function index({img, description}) {
     );
 }
 
-export default index;
+export default ActivityItem;

@@ -45,7 +45,7 @@ export default function Home() {
               <small>Currently Learning</small>
               <div className={styles.icon_language_container}>
                 <i className={styles.icon_language}>
-                  <Image src={"/images/usaIcon.png"} layout="fill" objectFit="cover"/>
+                  <Image alt="" src={"/images/usaIcon.png"} layout="fill" objectFit="cover"/>
                 </i>
                 <p>English</p>
               </div>
@@ -55,6 +55,7 @@ export default function Home() {
               <div className={styles.info_container}>
                 <div className={styles.img_container}>
                   <Image
+                    alt=""
                     src={"/images/imgCarttom.svg"}
                     layout="fill"
                     priority

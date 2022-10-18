@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
 
-function index({img, text, date}) {
+function NotificationItem({img, text, date}) {
     return (
         <div className={styles.notificationItem_container}>
             <i className={styles.notification_icon_container}>
@@ -16,4 +16,4 @@ function index({img, text, date}) {
     );
 }
 
-export default index;
+export default NotificationItem;

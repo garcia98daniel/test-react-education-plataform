@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-function index({color}) {
+function BurgerButtom({color}) {
   return (
     <button className={styles.btn_menu_container} >
       <div style={{background: color}}></div>
@@ -10,4 +10,4 @@ function index({color}) {
   );
 }
 
-export default index;
+export default BurgerButtom;

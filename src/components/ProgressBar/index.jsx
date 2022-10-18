@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import styles from "./styles.module.css";
-function index({totalHours, completeHours}) {
+function ProgressBar({totalHours, completeHours}) {
 
     const [percentage, setPercentage] = useState(0);
 
@@ -76,4 +76,4 @@ function index({totalHours, completeHours}) {
     );
 }
 
-export default index;
+export default ProgressBar;

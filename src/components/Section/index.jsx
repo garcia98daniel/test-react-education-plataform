@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css'
 
-function index({children, tittle, marginBottomTittle, line}) {
+function Section({children, tittle, marginBottomTittle, line}) {
     return (
         <section className={styles.section_container}>
             <div className={styles.tittle_section_container} style={{marginBottom: `${marginBottomTittle}px`}}>
@@ -15,4 +15,4 @@ function index({children, tittle, marginBottomTittle, line}) {
     );
 }
 
-export default index;
+export default Section;
