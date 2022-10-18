@@ -1,0 +1,14 @@
+.notificationItem_container{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px 30px;
+    width: 300px;
+}
+
+.notification_icon_container{
+    position: relative;
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+}
