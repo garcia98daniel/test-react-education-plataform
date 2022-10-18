@@ -1,19 +1,19 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Header from "../components/Header/index";
-import SearchInput from "../components/SearchInput/index";
-import Section from "../components/Section/index";
+import Header from "../../components/Header/index";
+import SearchInput from "../../components/SearchInput/index";
+import Section from "../../components/Section/index";
 import "semantic-ui-css/semantic.min.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Button, Icon } from "semantic-ui-react";
-import EventsToday from "../components/EventsToday/index";
-import ActivityItem from "../components/ActivityItem/index";
-import ProgressItem from "../components/ProgressItem/index";
-import ProgressBar from "../components/ProgressBar/index";
-import SideBar from "../components/SideBar/index";
+import EventsToday from "../../components/EventsToday/index";
+import ActivityItem from "../../components/ActivityItem/index";
+import ProgressItem from "../../components/ProgressItem/index";
+import ProgressBar from "../../components/ProgressBar/index";
+import SideBar from "../../components/SideBar/index";
 
 export default function Home() {
   const settings = {
