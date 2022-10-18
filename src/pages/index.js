@@ -79,10 +79,10 @@ export default function Home() {
                   <div className={styles.student_class}>SCIENCE</div>
                   <Slider {...settings}>
                     <div className={styles.img_slider_container}>
-                      <Image alt="" src={"/images/sliderImg.png"} alt="" layout="fill" objectFit="cover" />
+                      <Image alt="" src={"/images/sliderImg.png"} layout="fill" objectFit="cover" />
                     </div>
                     <div className={styles.img_slider_container}>
-                      <Image alt="" src={"/images/sliderImg.png"} alt="" layout="fill" objectFit="cover" />
+                      <Image alt="" src={"/images/sliderImg.png"} layout="fill" objectFit="cover" />
                       </div>
                   </Slider>
                 </div>
