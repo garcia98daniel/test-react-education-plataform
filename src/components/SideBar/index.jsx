@@ -12,27 +12,27 @@ function index(props) {
                 </div>
                 <div className={styles.option}>
                     <i className={styles.icon_container}>
-                        <Image src={"/images/menu/home.png"} layout="fill" objectFit="contain"/>
+                        <Image alt="" src={"/images/menu/home.png"} layout="fill" objectFit="contain"/>
                     </i>
                 </div>
                 <div className={styles.option}>
                     <i className={styles.icon_container}>
-                        <Image src={"/images/menu/cubesSoft.png"} layout="fill" objectFit="contain"/>
+                        <Image alt="" src={"/images/menu/cubesSoft.png"} layout="fill" objectFit="contain"/>
                     </i>
                 </div>
                 <div className={styles.option}>
                     <i className={styles.icon_container}>
-                        <Image src={"/images/menu/fileSoft.png"} layout="fill" objectFit="contain"/>
+                        <Image alt="" src={"/images/menu/fileSoft.png"} layout="fill" objectFit="contain"/>
                     </i>
                 </div>
                 <div className={styles.option}>
                     <i className={styles.icon_container}>
-                        <Image src={"/images/menu/statsSoft.png"} layout="fill" objectFit="contain"/>
+                        <Image alt="" src={"/images/menu/statsSoft.png"} layout="fill" objectFit="contain"/>
                     </i>
                 </div>
                 <div className={styles.option}>
                     <i className={styles.icon_container}>
-                        <Image src={"/images/menu/messageSoft.png"} layout="fill" objectFit="contain"/>
+                        <Image alt="" src={"/images/menu/messageSoft.png"} layout="fill" objectFit="contain"/>
                     </i>
                 </div>
             </div>

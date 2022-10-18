@@ -6,7 +6,7 @@ function index({img, text, date}) {
     return (
         <div className={styles.notificationItem_container}>
             <i className={styles.notification_icon_container}>
-                <Image src={`/images/${img}`} layout='fill' objectFit='contain'/>
+                <Image alt="" src={`/images/${img}`} layout='fill' objectFit='contain'/>
             </i>
             <div className={styles.info}>
                 <strong>{text}</strong>

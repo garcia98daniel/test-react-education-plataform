@@ -78,8 +78,12 @@ export default function Home() {
                   </div>
                   <div className={styles.student_class}>SCIENCE</div>
                   <Slider {...settings}>
-                    <img src={"/images/sliderImg.png"} />
-                    <img src={"/images/sliderImg.png"} />
+                    <div className={styles.img_slider_container}>
+                      <Image alt="" src={"/images/sliderImg.png"} alt="" layout="fill" objectFit="cover" />
+                    </div>
+                    <div className={styles.img_slider_container}>
+                      <Image alt="" src={"/images/sliderImg.png"} alt="" layout="fill" objectFit="cover" />
+                      </div>
                   </Slider>
                 </div>
                 <Section line={true} tittle={ <small className={styles.small_tittle}>EVENTS TODAY</small> }  marginBottomTittle={0}>

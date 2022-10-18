@@ -6,15 +6,16 @@ function index({totalHours, completeHours}) {
 
     const myRef = useRef(null);
 
-    const calcPercentage = () =>{
-        let hundredPercentageStep = (472/100);
-        let realPercentage = (completeHours * 100)/totalHours;
-        let pixelCirculeMovement = (hundredPercentageStep * realPercentage);
-        myRef.current.style.strokeDashoffset = 472 - (pixelCirculeMovement - 23.6);
-        setPercentage(realPercentage);
-    }
+    
     
     useEffect(() => {
+      const calcPercentage = () =>{
+          let hundredPercentageStep = (472/100);
+          let realPercentage = (completeHours * 100)/totalHours;
+          let pixelCirculeMovement = (hundredPercentageStep * realPercentage);
+          myRef.current.style.strokeDashoffset = 472 - (pixelCirculeMovement - 23.6);
+          setPercentage(realPercentage);
+      }
         calcPercentage();
     },[totalHours, completeHours])
 

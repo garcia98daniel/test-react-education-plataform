@@ -63,6 +63,7 @@
     height: 280px;
     overflow: hidden;
     border-radius: 12px;
+    padding-top: 40px;
 }
 
 .slider_container img{
@@ -95,10 +96,16 @@
     border-radius: 12px;
     position: absolute;
     z-index: 1;
-    top: 40px;
+    top: 50px;
     right: 10px;
     color: white;
     background: #3D84FF;
+}
+
+.img_slider_container{
+    position: relative;
+    height: 250px;
+    width: 100%;
 }
 
 .small_tittle{

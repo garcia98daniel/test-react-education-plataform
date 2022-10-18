@@ -6,7 +6,7 @@ function index({event_hour, event_tittle, event_img}) {
     return (
         <div className={styles.event_container}>
             <div className={styles.image_container}>
-                <Image src={`/images/${event_img}`} layout="fill" objectFit='cotain'/>
+                <Image alt="" src={`/images/${event_img}`} layout="fill" objectFit='cotain'/>
             </div>
             <div className={styles.event_hour_tittle_container}>
                 <small className={styles.event_hour}>{event_hour}</small>
