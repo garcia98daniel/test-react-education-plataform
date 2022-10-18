@@ -5,9 +5,14 @@
     width: 140px;
     margin: 5px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 18px 25px;
     font-size: 1.1em;
+}
+.progressItem_container p{
+    margin: 0;
+    font-family: var(--Gotham-Bold-font);
 }
 .progressItem_container.active{
     color: white;
@@ -19,6 +24,14 @@
 }
 
 .progressItem_container h1{
+    margin: 0;
     color: black;
     margin-left: 5px;
+    font-family: var(--Gotham-Medium-font);
+}
+
+@media screen and (min-width:768px){
+    .progressItem_container{
+        width: 180px;
+    }
 }

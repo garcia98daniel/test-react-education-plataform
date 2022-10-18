@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
         width: 100%;
-
+    font-weight: var(--regular-font);
+    color: #9D9BB6;
 }
 
 .img_container{
@@ -38,6 +39,7 @@
 .moreInfo{
     text-align: justify;
     text-justify: inter-word;
+    font-family: var(--regular-font);
 }
 
 @media screen and (min-width:768px){
@@ -66,5 +68,9 @@
         height: 12px;
         width: 12px;
         transform: rotate(180deg);
+    }
+
+    .img_description_container{
+        font-size: 1.2em;
     }
 }

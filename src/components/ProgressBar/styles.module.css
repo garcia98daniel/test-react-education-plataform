@@ -10,6 +10,7 @@
 }
 .progressbar_tittle{
     font-size: 1.7em;
+    font-family: var(--Gotham-Medium-font);
 }
 
 .progressbar{
@@ -36,15 +37,18 @@
     width: 120px;
     border-radius: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: start;
     align-items:center;
+    padding-left: 20px;
 }
 
 .number{
-    font-weight: 600;
-    font-size: 2.3em;
+    font-weight: 500;
+    font-size: 2.5em;
     color: white;
     transform: rotate(89deg);
+    font-family: var(--regular-font);
+
 
 }
 .number small{
@@ -100,6 +104,8 @@
     justify-content: space-around;
     padding: 10px;
     max-width: 335px;
+    font-family: var(--regular-font);
+
 }
 
 .complete_icon{
@@ -128,7 +134,7 @@
 
 .hours strong{
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 800;
    margin-right: 5px;
 }
 

@@ -20,6 +20,7 @@
     margin: 0;
     min-width: fit-content;
     margin-right: 20px;
+    font-family: var(--Gotham-Medium-font);
 }
 
 .line{

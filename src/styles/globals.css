@@ -1,5 +1,13 @@
+@import "./typography.css";
+
 :root {
   --text-color-blue: #103460;
+  --Gotham-Bold-font: 'Gotham Bold';
+  --Gotham-Medium-font: 'Gotham Medium';
+  --Gotham-Book-font: 'Gotham Book';
+  --Nunito-Bold-font: 'Nunito-Bold';
+  --regular-font: 'regular';
+  --Gilroy-Light-font: 'Gilroy-Light';
 }
 
 html,
